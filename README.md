@@ -6,11 +6,9 @@ What you do at the beginning is a repetition of these three steps: crawl, parse,
 
 ## What's in the name
 
-<code>
-                     in-pipe          out-pipe   in-pipe          out-pipe
->> INCOMING DATA >>  ======= [ PUMP ] ======== - ======= | PUMP | ======== >> OUTGOING DATA >>
-                                           pipes link
-</code>
+                         in-pipe          out-pipe   in-pipe          out-pipe
+    >> INCOMING DATA >>  ======= [ PUMP ] ======== - ======= | PUMP | ======== >> OUTGOING DATA >>
+                                               pipes link
 
 The building block of Pipes is the **pipe**: each pipe has a **pump** in the middle. The pump draws data from the incoming part of the pipe, elaborating it, to the outgoing part.
 Each middle pipe has its outgoing part connected with the incoming part of the next pipe.

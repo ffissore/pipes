@@ -92,7 +92,7 @@ public class PipesTest {
 
 		Thread.sleep(1000);
 
-		assertEquals(0, incoming.size());
+		assertEquals(1, incoming.size());
 		assertTrue(outgoing.contains(Integer.valueOf(5)));
 
 		pipe.close();

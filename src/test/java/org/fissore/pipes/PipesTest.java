@@ -76,7 +76,7 @@ public class PipesTest {
 		incoming.add(Integer.valueOf(1));
 		incoming.add(Integer.valueOf(2));
 
-		assertEquals(0, outgoing.size());
+		assertEquals(1, outgoing.size());
 
 		Pipe<Integer, Integer> pipe = new Pipe<Integer, Integer>(incoming, outgoing, summerPump);
 		executor.execute(pipe);
